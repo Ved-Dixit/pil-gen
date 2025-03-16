@@ -35,7 +35,7 @@ with open(zip_path, "wb") as f:
 with zipfile.ZipFile(zip_path, "r") as zip_ref:
     zip_ref.extractall("./model")
 print("🚀 Loading GPT-2 model...")
-gpt2_pil_generator = pipeline("text-generation", model=./model)
+gpt2_pil_generator = pipeline("text-generation", model='./model')
 
 
 # 🎯 Improved GPT-2 generation with retries and stronger prompts
