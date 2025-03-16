@@ -192,4 +192,5 @@ def run_pil_generator():
     return jsonify({'pil-text':generated_pil})
 # 🔥 Run the Generator
 if __name__ == "__main__":
-    app.run()
+    port = int(os.getenv("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
