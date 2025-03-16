@@ -1,0 +1,87 @@
+/* Import the uploaded image */
+body {
+  background: url('assets/images.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Glassmorphism effect */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Labels */
+label {
+  color: white;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(45deg, #1e90ff, #00c3ff);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #00c3ff, #1e90ff);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
